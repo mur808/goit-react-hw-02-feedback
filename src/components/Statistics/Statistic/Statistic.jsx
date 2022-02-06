@@ -1,4 +1,5 @@
 import s from "./Statistic.module.css";
+import PropTypes from "prop-types";
 
 const Statistic = ({ name, data }) => {
   return (
@@ -10,3 +11,9 @@ const Statistic = ({ name, data }) => {
 };
 
 export default Statistic;
+
+Statistic.propTypes = {
+  namet: PropTypes.string.isRequired,
+  data: PropTypes.string.isRequired,
+  fedbackStatistics: PropTypes.func.isRequired,
+};
